@@ -8,7 +8,7 @@ func InsertionSort(arr []int) []int {
 			if arr[j] > arr[j+1] {
 				arr[j], arr[j+1] = arr[j+1], arr[j]
 			} else {
-				continue
+				break
 			}
 		}
 	}
