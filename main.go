@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"sortAlgos/bubbleSort"
 	"sortAlgos/insertionSort"
+	"sortAlgos/mergeSort"
 	"sortAlgos/selectionSort"
 )
 
@@ -20,4 +21,8 @@ func main() {
 	insertionSortResponse := insertionSort.InsertionSort(append([]int(nil), arr...))
 	fmt.Printf("Response for Insertion Sort   : ")
 	fmt.Println(insertionSortResponse)
+
+	mergeSortResponse := mergeSort.MergeSort(append([]int(nil), arr...))
+	fmt.Printf("Response for Merge Sort       : ")
+	fmt.Println(mergeSortResponse)
 }
