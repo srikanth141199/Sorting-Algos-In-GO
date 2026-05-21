@@ -5,6 +5,7 @@ import (
 	"sortAlgos/bubbleSort"
 	"sortAlgos/insertionSort"
 	"sortAlgos/mergeSort"
+	"sortAlgos/quickSort"
 	"sortAlgos/selectionSort"
 )
 
@@ -25,4 +26,8 @@ func main() {
 	mergeSortResponse := mergeSort.MergeSort(append([]int(nil), arr...))
 	fmt.Printf("Response for Merge Sort       : ")
 	fmt.Println(mergeSortResponse)
+
+	quickSortResponse := quickSort.QuickSort(append([]int(nil), arr...))
+	fmt.Printf("Response for Quick Sort       : ")
+	fmt.Println(quickSortResponse)
 }
